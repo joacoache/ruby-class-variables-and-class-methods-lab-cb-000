@@ -27,8 +27,15 @@ class Song
     @@artists.uniq
   end
 
-  def genre_count
-    @@genres.uniq.count
+  def self.genre_count
+    genre_hash = {}
+    @@genres.each do |key, value|
+      if genre_hash.has_key?(key)
+        genre_hash(key) = genre.key(value) + 1
+      else
+        genre_hash.merge!(key => 0)
+      end  
+    end
   end
 
 end
