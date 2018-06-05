@@ -32,9 +32,6 @@ class Song
     @@genres.each {|i| genre_hash += 1}
     genre_hash
   end
-  names = ["Jason", "Jason", "Teresa", "Judah", "Michelle", "Judah", "Judah", "Allison"]
-  counts = Hash.new(0)
-  names.each { |name| counts[name] += 1 }
 end
 
 
@@ -46,7 +43,7 @@ end
 #    unless genre_hash.has_key?(key)
 #      genre_hash.merge!(key => 0)
 #    else
-#      genre_hash[key] = 
+#      genre_hash[key] =
 #    end
 #  end
 #  genre_hash
