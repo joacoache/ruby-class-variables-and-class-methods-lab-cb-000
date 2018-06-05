@@ -29,6 +29,7 @@ class Song
 
   def self.genre_count
     genre_hash = {}
+    c =  @@genres.uniq.length
     @@genres.each do |key, value|
       unless genre_hash.has_key?(key)
         genre_hash.merge!(key => 0)
