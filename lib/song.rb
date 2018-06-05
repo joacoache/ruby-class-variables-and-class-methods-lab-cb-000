@@ -34,7 +34,7 @@ class Song
       unless genre_hash.has_key?(key)
         genre_hash.merge!(key => 0)
       else
-        genre_hash(key) = @@genres.uniq.length
+        genre_hash(key) = c
       end
     end
     genre_hash
