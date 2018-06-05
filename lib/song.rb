@@ -36,6 +36,7 @@ class Song
         #  genre_hash(key) = genre.key(value) + 1
       end
     end
+    genre_hash
   end
 
 end
