@@ -33,7 +33,7 @@ class Song
       unless genre_hash.has_key?(key)
         genre_hash.merge!(key => 0)
       else
-        value = genre_hash.key(value + 1) 
+        value = genre_hash.key(value) + 1 
       end
     end
     genre_hash
